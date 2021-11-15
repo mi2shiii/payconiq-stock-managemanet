@@ -1,0 +1,7 @@
+version: '3'
+services:
+  backend:
+    image: stock/backend:latest
+    container_name: backend
+    ports:
+      - "8080:8080"

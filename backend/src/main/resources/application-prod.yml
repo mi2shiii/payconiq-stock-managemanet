@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQL92Dialect
+    show-sql: true
+  datasource:
+    hikari:
+      driver-class-name: org.postgresql.Driver
+      jdbc-url: jdbc:postgresql://postgres_db:5432/stock_db
+      username: postgres
+      password: password
+      maximum-pool-size: 5
+      connection-test-query: "SELECT 1"
+      validation-timeout: 300000
+stock:
+  lockTimeInSeconds: 300
